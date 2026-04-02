@@ -1,7 +1,7 @@
 import streamlit as st
 import gspread
 from google.oauth2.service_account import Credentials
-st.set_page_config(page_title="Contador S&S", page_icon="🎴", layout="centered")
+st.set_page_config(page_title="Contador S&S", page_icon="𔒝", layout="centered")
 st.logo("https://www.sanitsolutions.com.mx/templates/rt_akuatik/custom/images/FB-04%20(1).png")
 
 # --- CONEXIÓN A GOOGLE SHEETS ---
