@@ -46,16 +46,16 @@ def actualizar_en_nube(empleado, cambio):
     return nuevas_fichas
 
 # --- INTERFAZ ---
-st.title("Contador S&S 🎴")
+st.title("Contador S&S 𔒝")
 
 nombres_empleados = list(fichas.keys())
-opciones_menu = ["Elige una opción...", "Admin (Sergio)"] + nombres_empleados
+opciones_menu = ["Elige una opción...", "Admin (Fito)"] + nombres_empleados
 
 usuario = st.selectbox("Selecciona tu perfil:", opciones_menu)
 st.divider()
 
 # VISTA ADMINISTRADOR
-if usuario == "Admin (Sergio)":
+if usuario == "Admin (Fito)":
     password = st.text_input("Ingresa tu PIN de Administrador:", type="password")
     
     if password == "caradehuevo2026": 
