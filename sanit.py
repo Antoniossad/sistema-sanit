@@ -1,8 +1,8 @@
 import streamlit as st
 import gspread
 from google.oauth2.service_account import Credentials
-
-st.set_page_config(page_title="Sistema Sanit", layout="centered")
+st.set_page_config(page_title="Contador S&S", page_icon="🎴", layout="centered")
+st.logo("https://www.sanitsolutions.com.mx/templates/rt_akuatik/custom/images/FB-04%20(1).png")
 
 # --- CONEXIÓN A GOOGLE SHEETS ---
 @st.cache_resource
@@ -46,7 +46,7 @@ def actualizar_en_nube(empleado, cambio):
     return nuevas_fichas
 
 # --- INTERFAZ ---
-st.title("Sanit&Solutions 🎴")
+st.title("Contador S&S 🎴")
 
 nombres_empleados = list(fichas.keys())
 opciones_menu = ["Elige una opción...", "Admin (Sergio)"] + nombres_empleados
